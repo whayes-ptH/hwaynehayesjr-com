@@ -5,7 +5,7 @@
   --muted: #9aa8bf;
   --gold: #c9a227;
   --line: rgba(201, 162, 39, 0.28);
-  --max: 44rem;
+  --max: 56rem;
 }
 * { box-sizing: border-box; }
 html, body {
@@ -15,9 +15,7 @@ html, body {
 a { color: var(--gold); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .wrap { width: min(100% - 2rem, var(--max)); margin-inline: auto; }
-.hero { width: 100%; max-height: 220px; overflow: hidden; border-bottom: 1px solid var(--line); }
-.hero img { display: block; width: 100%; height: 220px; object-fit: cover; }
-.intro { padding: 2rem 0 1.5rem; }
+.intro { padding: 2.25rem 0 1.5rem; }
 .eyebrow { margin: 0 0 0.5rem; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.75rem; color: var(--gold); }
 h1 { margin: 0 0 0.6rem; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 650; letter-spacing: -0.02em; }
 .lede { margin: 0 0 1.25rem; color: var(--muted); font-size: 1.05rem; }
@@ -29,18 +27,26 @@ h1 { margin: 0 0 0.6rem; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 650
 }
 .social-btn:hover { border-color: var(--gold); color: var(--gold); text-decoration: none; }
 main { padding: 0.5rem 0 3rem; display: grid; gap: 1rem; }
-.brands { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
-@media (max-width: 560px) { .brands { grid-template-columns: 1fr; } }
+.brands {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+@media (max-width: 800px) { .brands { grid-template-columns: 1fr; } }
 .brand {
-  display: flex; flex-direction: column; gap: 0.25rem; padding: 1.1rem 1.2rem;
-  border-radius: 12px; border: 1px solid var(--line); background: var(--panel);
+  display: flex; flex-direction: column; align-items: center; gap: 0.55rem;
+  padding: 1.15rem 1rem 1.25rem; text-align: center;
+  border-radius: 14px; border: 1px solid var(--line); background: var(--panel);
   text-decoration: none; color: inherit;
 }
-.brand:hover { border-color: var(--gold); text-decoration: none; }
-.brand-mark { font-weight: 700; letter-spacing: 0.02em; }
-.brand-mark.patienttrac { color: #7eb6ff; }
-.brand-mark.aegisiq { color: var(--gold); }
-.brand-sub { font-size: 0.85rem; color: var(--muted); }
+.brand:hover { border-color: var(--gold); text-decoration: none; transform: translateY(-1px); }
+.brand-logo {
+  display: block; width: min(100%, 200px); height: auto; max-height: 160px;
+  object-fit: contain; border-radius: 10px; background: #070b14;
+}
+.brand-logo.crest { background: #fff; padding: 0.35rem; max-height: 140px; }
+.brand-name { font-weight: 700; letter-spacing: 0.01em; font-size: 1.02rem; }
+.brand-sub { font-size: 0.82rem; color: var(--muted); line-height: 1.35; }
 .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.35rem; }
 h2 { margin: 0 0 0.75rem; font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold); }
 p { margin: 0 0 0.9rem; }
