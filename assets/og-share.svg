@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b1220"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#c9a227"/>
+  <rect x="0" y="622" width="1200" height="8" fill="#c9a227"/>
+  <rect x="48" y="48" width="8" height="534" fill="#c9a227"/>
+  <text x="100" y="280" fill="#e8eef8" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="700">H. Wayne Hayes Jr</text>
+  <text x="100" y="350" fill="#c9a227" font-family="Segoe UI, Arial, sans-serif" font-size="28">PatientTrac · AegisIQ Limited</text>
+  <text x="100" y="410" fill="#9aa8bf" font-family="Segoe UI, Arial, sans-serif" font-size="22">Clinical Intelligence Network · Bogotá</text>
+</svg>
